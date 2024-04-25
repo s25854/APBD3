@@ -11,9 +11,9 @@ namespace WebApplication1
     {
         private readonly AnimalRepo _animalsRepository;
 
-        public AnimalControl(AnimalsRepo animalsRepository)
+        public AnimalControl(AnimalRepo animalRepository)
         {
-            _animalsRepository = animalsRepository ?? throw new ArgumentNullException(nameof(animalsRepository));
+            _animalsRepository = animalRepository ?? throw new ArgumentNullException(nameof(animalRepository));
         }
 
         [HttpGet]
